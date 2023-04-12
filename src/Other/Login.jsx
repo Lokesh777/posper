@@ -22,7 +22,7 @@ const initialFormData = {
 };
 
 export default function Authentication({handleAuth}) {
-  const [loginSignup, setLoginSignup] = useState(false);
+  const [loginSignup, setLoginSignup] = useState(true);
   const [formData, setFormData] = useState(initialFormData);
   const [error,setError]=useState(false);
   const {dispatch, isFetching } = useContext(Context);
