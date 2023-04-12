@@ -71,7 +71,7 @@ export default function Authentication({handleAuth}) {
     try {
       let res = await axios.post(`${api_url}auth/signup`, formData);
       toast.success(res.data.message); 
-      console.log(res.data.newUser)
+      console.log(res.data.newUser);
       navigate("/login")
     } catch (err) {
       setError(true);
