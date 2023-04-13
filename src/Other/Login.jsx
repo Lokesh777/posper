@@ -38,7 +38,7 @@ export default function Authentication() {
   // events and functions
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
+
     setFormData({ ...formData, [name]: value });
   };
 
@@ -52,11 +52,18 @@ return (
       flexDirection={"column"}
       maxWidth={400}
       textAlign="center"
+      backgroundColor="#fff"
       justifyContent={"center"}
       margin="auto"
-      padding={1}
-      marginTop={1}
-
+      padding={4}
+      marginTop={2}
+     boxShadow="5px 5px 10px #ccc"
+    borderRadius="1rem"
+    sx={{
+      '&:hover': {
+        boxShadow: 'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px'
+      }
+    }}
     >
       <Typography fontWeight={600} fontSize={30}>
         Signup
